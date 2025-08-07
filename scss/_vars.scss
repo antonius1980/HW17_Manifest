@@ -6,16 +6,18 @@ $background-color-global: #fff;
 $font-size-global: 16px;
 $font-family-global: "Lato", sans-serif;
 $font-weight-global: 400;
-$dark-color-global: #000000;
-$dark-color-global-rgb: hex-to-rgb-list($dark-color-global);
-$accent-color-global: #ff0000;
-$accent-color-global-rgb: hex-to-rgb($accent-color-global);
+$dark-color-primary: #000000;
+$dark-color-primary-rgb: hex-to-rgb-list($dark-color-primary);
+$dark-color-secondary: #565656;
+$dark-color-secondary-rgb: hex-to-rgb-list($dark-color-secondary);
+$accent-color-primary: #ff0000;
+$accent-color-primary-rgb: hex-to-rgb($accent-color-primary);
 
 $font-family-headings: "Red Hat Display", sans-serif;
 
 $font-family-heading-1: "Red Hat Display", sans-serif;
 $font-weight-heading-1: 600;
-$font-color-heading-1: $dark-color-global;
+$font-color-heading-1: $dark-color-primary;
 
 
 $container-width: 1200px;

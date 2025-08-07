@@ -652,4 +652,37 @@ body {
   margin: 0 auto;
   padding: 0 15px;
   width: 100%;
+}
+
+a:hover {
+  cursor: url("./../assets/img/svg/small/cursor.svg"), pointer;
+}
+
+.social {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 23px;
+  list-style: none;
+}
+.social__icon {
+  fill: #565656;
+}
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  background: #efeef3;
+  border-radius: 0px;
+  color: #565656;
+  border: 1px solid #565656;
+}
+.social__link:hover {
+  background-color: #565656;
+  color: #fff;
+}
+.social__link:hover .social__icon {
+  fill: #fff;
 }/*# sourceMappingURL=main.css.map */
