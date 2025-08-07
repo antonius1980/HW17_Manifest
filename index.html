@@ -6,12 +6,123 @@
 		<title>Lesson_N. Page name.</title>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 		<link rel="icon" type="image/svg+xml" href="./assets/img/svg/favicon.svg">
 		<link rel="alternate icon" href="./favicon.ico">
 		<link rel="stylesheet" href="./css/main.css">
 	</head>
 	<body>
-
+		<header class="header top-header">
+			<div class="container top-header__container">
+				<div class="top-header__logo logo">
+					<a href="./#" class="logo__link">
+						<svg class="logo__img" width="142" height="12" alt="Logo image">
+							<use xlink:href="./assets/img/svg/sprite/sprite.svg#logo"></use>
+						</svg>
+					</a>
+				</div>
+				<search class="top-header__search search">
+					<form action="#" class="search__form">
+						<label for="search" class="search__label">
+							<input type="search" id="search" name="q" class="search__input" placeholder="searching">
+						</label>
+					</form>
+				</search>
+				<nav class="nav top-header__nav">
+					<ul class="nav-menu">
+						<li class="nav-menu__item"><a href="#" class="nav-menu__link">Home</a></li>
+						<li class="nav-menu__item"><a href="#" class="nav-menu__link">About</a></li>
+						<li class="nav-menu__item"><a href="#" class="nav-menu__link">Blog</a></li>
+						<li class="nav-menu__item"><a href="#" class="nav-menu__link">Works</a></li>
+						<li class="nav-menu__item"><a href="#" class="nav-menu__link">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<main class="main main-content">
+			<section class="section hero-section main-content__section ">
+				<div class="container hero-section__container main-content__container">
+					<h1 class="heading-1 hero-section__heading-1">
+						Manifest is a newborn theme.<br>Clean, simple and fast.
+					</h1>
+				</div>
+			</section>
+			<div class="container main-content__container">
+				<article class="article blog-content main-content__article">
+					<h2 class="heading-2 article-heading blog-content__heading">Blog</h2>
+					<section class="section blog-content__section inverted-cols">
+						<div class="col blog-content__col section__col content-col">
+							<div class="tags blog-content__tags">
+								<a href="#" class="link tag blog-content__tag">Technology</a>,
+								<a href="#" class="link tag blog-content__tag">Interface Design</a>
+							</div>
+							<h3 class="heading-3 section-heading blog-content__section-heading">
+								Using UX Design to Build a Sustainable Future
+							</h3>
+							<div class="posted-date  blog-content__posted-date">
+								<time class="date blog-content__date posted-date__date" datetime="2020-05-06">6 May, 2020</time>
+							</div>
+							<p class="section-content blog-content__section-content">
+								Transformation has to be driven by everybody, not just by climate groups, and we have a responsibility to use our influence to drive this.
+								<a href="#" class="link arrow-link blog-content__arrow-link">&LongRightArrow;</a>
+							</p>
+						</div>
+						<div class="col blog-content__col section__col image-col">
+							<img class="img blog-content__img image-col__img" src="./assets/img/arrow-image.webp" alt="">
+						</div>
+					</section>
+					<section class="section blog-content__section">
+						<div class="col blog-content__col section__col content-col">
+							<div class="tags blog-content__tags">
+								<a href="#" class="link tag blog-content__tag">Technology</a>,
+								<a href="#" class="link tag blog-content__tag">Interface Design</a>
+							</div>
+							<h3 class="heading-3 section-heading blog-content__section-heading">
+								Using UX Design to Build a Sustainable Future
+							</h3>
+							<div class="posted-date  blog-content__posted-date">
+								<time class="date blog-content__date posted-date__date" datetime="2020-05-06">6 May, 2020</time>
+							</div>
+							<p class="section-content blog-content__section-content">
+								Transformation has to be driven by everybody, not just by climate groups, and we have a responsibility to use our influence to drive this.
+								<a href="#" class="link arrow-link blog-content__arrow-link">&LongRightArrow;</a>
+							</p>
+						</div>
+						<div class="col blog-content__col section__col image-col">
+							<img class="img blog-content__img image-col__img" src="./assets/img/blog-image-building.webp" alt="">
+						</div>
+					</section>
+				</article>
+				<article class="article blog-content blog-latest-posts main-content__article">
+					<h2 class="heading-2 article-heading blog-content__heading">Latest Posts</h2>
+					<section class="section blog-content__section inverted-cols">
+						<div class="col blog-content__col section__col content-col">
+							<div class="tags blog-content__tags">
+								<a href="#" class="link tag blog-content__tag">Technology</a>,
+								<a href="#" class="link tag blog-content__tag">Interface Design</a>
+							</div>
+							<h3 class="heading-3 section-heading blog-content__section-heading">
+								Using UX Design to Build a Sustainable Future
+							</h3>
+							<div class="posted-date  blog-content__posted-date">
+								<time class="date blog-content__date posted-date__date" datetime="2020-05-06">6 May, 2020</time>
+							</div>
+							<p class="section-content blog-content__section-content">
+								Transformation has to be driven by everybody, not just by climate groups, and we have a responsibility to use our influence to drive this.
+								<a href="#" class="link arrow-link blog-content__arrow-link">&LongRightArrow;</a>
+							</p>
+						</div>
+						<div class="col blog-content__col section__col image-col">
+							<img class="img blog-content__img image-col__img" src="./assets/img/arrow-image.webp" alt="">
+						</div>
+					</section>
+				</article>
+			</div>
+		</main>
+		<footer class="footer bottom-footer">
+			<div class="container bottom-footer__container">
+				
+			</div>
+		</footer>
 	</body>
 </html>
