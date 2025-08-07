@@ -1,0 +1,65 @@
+@use "include" as *;
+
+
+//Default styles without media queries - Resolutions for widescreen
+
+//Resolutions up from $lb-xxl
+@media screen and (min-width: $lb-xxl) {
+
+}
+
+
+//Resolutions below starting from $lb-xxl-min
+@media screen and (max-width: $lb-xxl-min) {
+
+}
+
+//Resolutions from $lb-xl to $lb-xxl-min
+@media screen and (min-width: $lb-xl) and (max-width: $lb-xxl-min) {
+
+}
+
+//Resolutions below starting from $lb-xl-min
+@media screen and (max-width: $lb-xl-min) {
+
+}
+
+//Resolutions from $lb-lg to $lb-xl-min
+@media screen and (min-width: $lb-lg) and (max-width: $lb-xl-min) {
+
+}
+
+//Resolutions below starting from $lb-lg-min
+@media screen and (max-width: $lb-lg-min) {
+
+}
+
+//Resolutions from $lb-md to $lb-lg-min
+@media screen and (min-width: $lb-md) and (max-width: $lb-lg-min) {
+
+}
+
+//Resolutions below starting from $lb-md-min
+@media screen and (max-width: $lb-md-min) {
+
+}
+
+//Resolutions from $lb-sm to $lb-md-min
+@media screen and (min-width: $lb-sm) and (max-width: $lb-md-min) {
+
+}
+
+//Resolutions below starting from $lb-sm-min
+@media screen and (max-width: $lb-sm-min) {
+
+}
+
+//Resolutions from $lb-xs to $lb-sm-min
+@media screen and (min-width: $lb-xs) and (max-width: $lb-sm-min) {
+
+}
+
+//Resolutions below starting from $lb-xs-min
+@media screen and (max-width: $lb-xs-min) {
+
+}

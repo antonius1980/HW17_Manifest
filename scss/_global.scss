@@ -1,0 +1,29 @@
+@use "include" as *;
+
+html {
+	font-size: $font-size-html;
+}
+
+body {
+	font-family: $font-family-global;
+	background: $background-color-global;
+	font-size: $font-size-global;
+	font-weight: $font-weight-global;
+	font-style: normal;
+	color: $dark-color-global;
+}
+
+.flex-container {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.container {
+	max-width: $container-width;
+	margin: 0 auto;
+	padding: 0 15px;
+	width: 100%;
+}
+

@@ -1,0 +1,50 @@
+@use "functions" as *;
+// Main vars
+$font-size-html: 10px;
+
+$background-color-global: #fff;
+$font-size-global: 16px;
+$font-family-global: "Roboto", sans-serif;
+$font-weight-global: 400;
+$dark-color-global: #000000;
+$dark-color-global-rgb: hex-to-rgb-list($dark-color-global);
+$accent-color-global: #ff0000;
+$accent-color-global-rgb: hex-to-rgb($accent-color-global);
+
+$font-family-heading-1: "Roboto", sans-serif;
+$font-weight-heading-1: 600;
+$font-color-heading-1: $dark-color-global;
+
+
+$container-width: 1200px;
+
+
+// Breakpoints mobile first
+//0 - default CSS
+$lb-xs-min: 359.99px;
+$lb-xs: 360px;
+$lb-sm-min: 575.99px;
+$lb-sm: 576px;
+$lb-md-min: 767.99px;
+$lb-md: 768px;
+$lb-lg-min: 991.99px;
+$lb-lg: 992px;
+$lb-xl-min: 1199.99px;
+$lb-xl: 1200px;
+$lb-xxl-min: 1399.99px;
+$lb-xxl: 1400px;
+
+// Breakpoints desktop first
+//Widescreen - default CSS
+// $lb-xxl: 1400px;
+// $lb-xxl-min: 1399.99px;
+// $lb-xl: 1200px;
+// $lb-xl-min: 1199.99px;
+// $lb-lg: 992px;
+// $lb-lg-min: 991.99px;
+// $lb-md: 768px;
+// $lb-md-min: 767.99px;
+// $lb-sm: 576px;
+// $lb-sm-min: 575.99px;
+// $lb-xs: 360px;
+// $lb-xs-min: 359.99px;

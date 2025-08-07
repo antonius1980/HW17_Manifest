@@ -1,0 +1,61 @@
+@use "include" as *;
+
+
+//Default styles without media queries - Resolutions starting up from 0 to $lb-xs
+
+
+//Resolutions starting up from $lb-xs
+@media screen and (min-width: $lb-xs) {
+
+}
+
+//Resolutions from $lb-xs to $lb-sm-min
+@media screen and (min-width: $lb-xs) and (max-width: $lb-sm-min) {
+
+}
+
+//Resolutions starting up from $lb-sm
+@media screen and (min-width: $lb-sm) {
+
+}
+
+//Resolutions from $lb-sm to $lb-md-min
+@media screen and (min-width: $lb-sm) and (max-width: $lb-md-min) {
+
+}
+
+//Resolutions starting up from $lb-md
+@media screen and (min-width: $lb-md) {
+
+}
+
+//Resolutions from $lb-md to $lb-lg-min
+@media screen and (min-width: $lb-md) and (max-width: $lb-lg-min) {
+
+}
+
+//Resolutions starting up from $lb-lg
+@media screen and (min-width: $lb-lg) {
+
+}
+
+//Resolutions from $lb-lg to $lb-xl-min
+@media screen and (min-width: $lb-lg) and (max-width: $lb-xl-min) {
+
+}
+
+
+//Resolutions starting up from $lb-xl
+@media screen and (min-width: $lb-xl) {
+
+}
+
+//Resolutions from $lb-xl to $lb-xxl-min
+@media screen and (min-width: $lb-xl) and (max-width: $lb-xxl-min) {
+
+}
+
+//Resolutions starting up from $lb-xxl
+@media screen and (min-width: $lb-xxl) {
+
+}
