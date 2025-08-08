@@ -27,9 +27,264 @@ body {
 	width: 100%;
 }
 
+
 a:hover {
 	cursor: url("./../assets/img/svg/small/cursor.svg"), pointer;
 }
+
+.button {
+	
+}
+
+.img {
+
+}
+
+.link {
+}
+
+.heading-1 {
+
+}
+.heading-2 {
+
+}
+.heading-3 {
+
+}
+
+.header {
+
+}
+
+.top-header {
+	&__container {
+	}
+	&__logo {
+	}
+	&__hamburger-toggle {
+	}
+	&__hamburger-toggle-label {
+	}
+	&__nav {
+	}
+	&__search {
+	}
+}
+
+.logo {
+	&__img {
+	}
+	&__link {
+	}
+}
+
+.nav {
+
+}
+
+.nav-menu {
+	&__item {
+	}
+	&__link {
+	}
+}
+
+.search {
+	&__form {
+	}
+	&__input {
+	}
+	&__label {
+	}
+}
+
+.hamburger-toggle {
+}
+
+.hamburger-toggle-label {
+
+}
+
+.main {
+	
+}
+.main-content {
+	&__article {
+	}
+	&__container {
+	}
+	&__section {
+	}
+}
+
+.hero-section {
+	&__container {
+	}
+	&__heading-1 {
+	}
+}
+
+
+.article {
+
+}
+
+.article-header {
+
+}
+
+.article-heading {
+
+}
+
+.article-footer {
+	&__common {
+	}
+	&__content {
+	}
+	&__huge {
+	}
+	&__item {
+	}
+	&__link {
+	}
+	&__list {
+	}
+}
+
+.arrow-link {
+	
+}
+
+
+.blog-content {
+	&__arrow-link {
+	}
+	&__col {
+	}
+	&__date {
+	}
+	&__footer {
+	}
+	&__header {
+	}
+	&__heading {
+	}
+	&__img {
+	}
+	&__posted-date {
+	}
+	&__section {
+	}
+	&__section-content {
+	}
+	&__section-heading {
+	}
+	&__tag {
+	}
+	&__tags {
+	}
+}
+
+.blog-latest-posts {
+	&__arrow-link {
+	}
+	&__button {
+	}
+	&__col {
+	}
+	&__col-header {
+	}
+	&__footer {
+	}
+	&__header {
+	}
+	&__heading {
+	}
+	&__img {
+	}
+	&__section {
+	}
+	&__tag {
+	}
+	&__tags {
+	}
+}
+
+.section {
+	&__col {
+	}
+}
+
+.section-content {
+
+}
+.section-heading {
+
+}
+
+
+.col {
+
+}
+
+.col-header {
+
+}
+
+.content-col {
+
+}
+
+.image-col {
+
+	&__img {
+
+	}
+}
+.inverted-cols {
+
+}
+
+.full-width-col {
+
+}
+
+.date {
+
+}
+
+.tags {
+
+}
+
+.tag {
+
+}
+
+.posted-date {
+	&__date {
+	}
+}
+
+
+
+.footer {
+
+}
+
+.bottom-footer {
+	&__col {
+	}
+	&__container {
+	}
+	&__heading {
+	}
+	&__social {
+	}
+}
+
 
 .social {
 	display: flex;
