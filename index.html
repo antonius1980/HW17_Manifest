@@ -16,22 +16,22 @@
 			<div class="container top-header__container">
 				<div class="top-header__logo logo">
 					<a href="./#" class="logo__link">
-						<svg class="logo__img" width="142" height="12" alt="Logo image">
+						<svg class="logo__img" width="145" height="13" alt="Logo image">
 							<use xlink:href="./assets/img/svg/sprite/sprite.svg#logo"></use>
 						</svg>
 					</a>
 				</div>
-				<input class="top-header__hamburger-toggle hamburger-toggle" type="checkbox" id="hamburger-toggle">
-				<label class="hamburger-toggle-label top-header__hamburger-toggle-label" for="hamburger-toggle"></label>
 				<search class="top-header__search search">
 					<form action="#" class="search__form">
 						<label for="search" class="search__label">
-							<input type="search" id="search" name="q" class="search__input" placeholder="searching">
+							<input type="search" id="search" name="q" class="search__input" placeholder="Search">
 						</label>
 					</form>
 				</search>
 				<nav class="nav top-header__nav">
-					<ul class="nav-menu">
+					<input class="top-header__hamburger-toggle hamburger-toggle" type="checkbox" id="hamburger-toggle">
+					<label class="hamburger-toggle-label top-header__hamburger-toggle-label" for="hamburger-toggle"><span class="hamburger-toggle-img"></span></label>
+					<ul class="menu nav-menu">
 						<li class="nav-menu__item"><a href="#" class="nav-menu__link">Home</a></li>
 						<li class="nav-menu__item"><a href="#" class="nav-menu__link">About</a></li>
 						<li class="nav-menu__item"><a href="#" class="nav-menu__link">Blog</a></li>
@@ -66,7 +66,7 @@
 							</div>
 							<p class="section-content blog-content__section-content">
 								Transformation has to be driven by everybody, not just by climate groups, and we have a responsibility to use our influence to drive this.
-								<a href="#" class="link arrow-link blog-content__arrow-link">&LongRightArrow;</a>
+								<a href="#" class="link arrow-link blog-content__arrow-link"></a>
 							</p>
 						</div>
 						<div class="col blog-content__col section__col image-col">
@@ -243,7 +243,8 @@
 			<div class="container bottom-footer__container">
 				<div class="bottom-footer__col">
 					<h2 class="heading-2 bottom-footer__heading">Need a project?</h2>
-					<p></p>
+					<p class="bottom-footer__content"><a class="bottom-footer__link" href="tel:(239) 555-0108">(239) 555-0108</a></p>
+					<p class="bottom-footer__content"><a class="bottom-footer__link" href="mailto:tanya.hill@example.com">tanya.hill@example.com</a></p>
 				</div>
 				<div class="bottom-footer__col">
 					<ul class="social bottom-footer__social">
@@ -279,7 +280,7 @@
 					</ul>
 				</div>
 				<div class="bottom-footer__col full-width-col">
-					<p>&copy; Copyright Manifest Theme. All rights reserved</p>
+					<p>&copy; Copyright Manifest Theme. All&nbsp;rights&nbsp;reserved</p>
 				</div>
 			</div>
 		</footer>
