@@ -674,6 +674,28 @@ a:hover {
   letter-spacing: 0.1em;
   min-width: 180px;
   padding: 10px 45px;
+  border: 1px solid #565656;
+}
+.button:hover {
+  background-color: #000000;
+  border-color: #000000;
+}
+
+dialog {
+  width: 100%;
+  max-width: 800px;
+  min-height: 400px;
+  padding: 2%;
+  text-align: center;
+  border-color: #565656;
+}
+dialog:open {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+dialog p {
+  text-align: left;
 }
 
 .heading-1 {

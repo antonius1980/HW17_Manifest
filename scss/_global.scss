@@ -47,6 +47,28 @@ a:hover {
 	letter-spacing: 0.1em;
 	min-width: 180px;
 	padding: 10px 45px;
+	border: 1px solid $dark-color-secondary;
+	&:hover {
+		background-color: $dark-color-primary;
+		border-color: $dark-color-primary;
+	}
+}
+
+dialog {
+	&:open {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+	}
+	width:100%;
+	max-width:800px;
+	min-height: 400px;
+	padding: 2%;
+	text-align: center;
+	border-color: $dark-color-secondary;
+	& p {
+		text-align: left;
+	}
 }
 
 .img {

@@ -215,7 +215,7 @@
 							</p>
 						</div>
 					</section>
-					<button type="button" class="button blog-latest-posts__button">Load More</button>
+					<button type="button" onclick="info.showModal()" class="button blog-latest-posts__button">Load More</button>
 					<footer class="article-footer blog-content__footer blog-latest-posts__footer">
 						<div class="article-footer__huge">
 							<ul class="article-footer__list">
@@ -285,5 +285,10 @@
 				</div>
 			</div>
 		</footer>
+		<dialog id="info">
+			<h1 class="heading-1">Dialog heading</h1>
+			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis molestiae odio non dicta debitis, inventore vitae provident maxime similique in, enim est, rerum ducimus pariatur a atque. Similique molestias deserunt vel corrupti molestiae voluptatum exercitationem error voluptate facilis labore omnis ipsa porro, distinctio quam velit minus consectetur necessitatibus ipsam? Numquam.</p>
+			<button type="button" class="button" onclick="info.close()">Close</button>
+		</dialog>
 	</body>
 </html>
