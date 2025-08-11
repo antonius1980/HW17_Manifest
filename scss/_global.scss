@@ -24,7 +24,7 @@ body {
 .container {
 	max-width: $container-width;
 	margin: 0 auto;
-	padding: 0 15px;
+	padding-inline: 10px;
 	width: 100%;
 }
 
@@ -57,7 +57,7 @@ a:hover {
 }
 
 .heading-1 {
-	font-family: "Red Hat Display", sans-serif;
+	font-family: $font-family-headings;
 	font-weight: 600;
 	font-size: 3rem;
 	line-height: 1.66667em;
@@ -66,20 +66,23 @@ a:hover {
 }
 
 .heading-2 {
-	font-family: "Red Hat Display", sans-serif;
-	font-weight: 400;
-	font-size: 4.8rem;
-	line-height: 1.33em;
+	font-family: $font-family-headings;
+	font-weight: 600;
+	font-size: 2.8rem;
+	line-height: 1.286em;
+	margin-bottom: 10px;
 	letter-spacing: 0.05em;
 	color: $font-color-heading;
 }
+
 .heading-3 {
-	font-family: "Red Hat Display", sans-serif;
+	font-family: $font-family-headings;
 	font-weight: 500;
-	font-size: 2.3rem;
-	line-height: 1.66em;
-	letter-spacing: 0.1em;
+	font-size: 2.2rem;
+	line-height: 1.69em;
+	letter-spacing: 0.105em;
 	color: $font-color-heading;
+	margin-bottom: 10px;
 }
 
 .header {
@@ -97,7 +100,7 @@ a:hover {
 	&__logo {
 	}
 	&__hamburger-toggle {
-		margin-top: 0.5em;
+		//margin-top: 0.5em;
 	}
 	&__hamburger-toggle-label {
 	}
@@ -120,7 +123,7 @@ a:hover {
 		color: $dark-color-primary;
 	}
 	&__img {
-
+		display: block;
 	}
 }
 
@@ -175,9 +178,9 @@ a:hover {
 	&__form {
 	}
 	&__input {
-		width: 65px;
-		padding:5px 10px 5px 30px; 
-		background: url(./../assets/img/svg/search.svg) no-repeat 5px 50%;
+		width: 25px;
+		padding:5px 10px 5px 10px; 
+		background: url(./../assets/img/svg/search.svg) no-repeat 5px 50% /22px;
 		border: 1px solid transparent;
 		&::placeholder {
 			color: transparent;
@@ -186,8 +189,15 @@ a:hover {
 		&:active,
 		&:focus {
 				border: 1px solid #ccc;
+
+				background: none;
+				width: 100px;
+				padding:5px 5px 5px 5px; 
+				margin-right: 5px;
+				z-index: 2;
 			&::placeholder {
 				color: $links-color-primary;
+				color: transparent;
 			}
 		}
 
@@ -225,14 +235,14 @@ a:hover {
 	display: inline-block;
 	position: relative;
 	width: 34px;
-	height: 20px;
+	min-height: 20px;
 	cursor: url("./../assets/img/svg/small/cursor.svg"), pointer;
 }
 
 .hamburger-toggle-img {
 	display: inline-block;
 	position: relative;
-	top:-3px;
+	top:-6px;
 	width: 100%;
 	height: 2px;
 	background-color: $dark-color-primary;
@@ -254,134 +264,24 @@ a:hover {
 
 }
 
-.main {
-	
-}
-.main-content {
-	&__article {
-	}
-	&__container {
-		display: flex;
-		flex-direction: column;
-		gap:70px;
-		justify-content: space-around;
-		height: 100%;
-	}
-	&__section {
-	}
-}
-
-.hero-section {
-	min-height: 500px;
-	padding: 70px 0 50px;
-	background: #9edcde url("./../assets/img/header-bg-image-big.webp") 50% 50% no-repeat;
-	background-size: cover;
-	&__container {
-	}
-	&__heading-1 {
-	}
-}
-
-
-.article {
-
-}
-
-.article-header {
-
-}
-
-.article-heading {
-  font-weight: 600;
-  font-size: 2.8rem;
-  line-height: 1.66em;
-  margin-bottom: 10px;
-}
-
-.article-footer {
-	&__common {
-	}
-	&__content {
-	}
-	&__huge {
-	}
-	&__item {
-	}
-	&__link {
-	}
-	&__list {
-	}
-}
-
-.arrow-link {
-	text-decoration: none;
-	&::after {
-		content: "⟶";
-	}
-	
-}
-
-
-.blog-content {
-	&__arrow-link {
-	}
-	&__col {
-	}
-	&__date {
-	}
-	&__footer {
-	}
-	&__header {
-	}
-	&__heading {
-	}
-	&__img {
-	}
-	&__posted-date {
-	}
-	&__section {
-	}
-	&__section-content {
-	}
-	&__section-heading {
-	}
-	&__tag {
-	}
-	&__tags {
-	}
-}
-
-.blog-latest-posts {
-	&__arrow-link {
-	}
-	&__button {
-	}
-	&__col {
-	}
-	&__col-header {
-	}
-	&__footer {
-	}
-	&__header {
-	}
-	&__heading {
-	}
-	&__img {
-	}
-	&__section {
-	}
-	&__tag {
-	}
-	&__tags {
-	}
-}
-
 .section {
 	&__col {
+	}
+	& p {
+		letter-spacing: 0.05em
 	}
 }
 
 .section-content {
+	&:last-of-type{
+		&::after {
+			content: "⟶";
+			position: relative;
+			right: 0;
+			bottom:0;
+			cursor: pointer;
+		}
+	}
 
 }
 .section-heading {
@@ -409,6 +309,7 @@ a:hover {
 }
 .inverted-cols {
 
+
 }
 
 .full-width-col {
@@ -416,22 +317,202 @@ a:hover {
 }
 
 .date {
-
+	color: $links-color-primary;
 }
 
 .tags {
+	&__tag {
+		display: inline-block;
+		letter-spacing: 0.1em;
+		text-decoration: none;
+		margin-left: 0.2em;
+		&:first-of-type {
+			margin-left:0;
+		}
+		&:hover {
+			text-decoration: underline;
+		}
+
+	}
 
 }
 
-.tag {
 
-}
 
 .posted-date {
+	margin-bottom: 40px;
+	letter-spacing: 0.11em;
 	&__date {
 	}
 }
 
+.main {
+	
+}
+.main-content {
+
+	&__article {
+	}
+	&__container {
+		display: flex;
+		flex-direction: column;
+		gap:70px;
+		padding-block: 70px;
+		justify-content: space-evenly;
+
+	}
+	&__section {
+	}
+}
+
+.hero-section {
+	min-height: 500px;
+	padding: 70px 0 50px;
+	background: #9edcde url("./../assets/img/header-bg-image-mob.webp") 45% 50% /cover no-repeat;
+	@media screen and (min-resolution:2x) {
+		background: #9edcde url("./../assets/img/header-bg-image.webp") 50% 50% /cover no-repeat;
+	}
+	@media screen and (min-resolution:3x) {
+		background: #9edcde url("./../assets/img/header-bg-image-big.webp") 50% 50% /cover no-repeat;
+	}
+	&__container {
+		padding-block: 0;
+	}
+	&__heading-1 {
+	}
+}
+
+
+.article {
+
+}
+
+.article-header {
+	&__heading{
+
+	}
+
+}
+
+.article-heading {
+	font-weight: 400;
+	font-size: 4.8rem;
+	line-height: 1.33em;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+.article-footer {
+	padding-top: 70px;
+	&__common {
+	}
+	&__content {
+	}
+	&__huge {
+	}
+	&__item {
+	}
+	&__link {
+	}
+	&__list {
+	}
+}
+
+.arrow-link {
+	text-decoration: none;
+	letter-spacing: 0.1em;
+	&::after {
+		content: url("../assets/img/svg/small/arrow2.svg");
+		margin-left: 1.2em;
+		letter-spacing: 0.1em;
+		position: relative;
+	}
+	
+}
+
+
+.blog-content {
+	&__arrow-link {
+		display: block;
+		margin-bottom: 30px; 
+		
+		
+	}
+	&__col {
+	}
+	&__date {
+	}
+	&__footer {
+	}
+	&__header {
+	}
+	&__heading {
+	}
+	&__img {
+	}
+	&__posted-date {
+	}
+	&__section {
+		display: flex;
+		flex-direction: column;
+		row-gap: 35px;
+		& + section {
+			margin-top: 50px;
+		}
+	}
+	&__section-content {
+	}
+	&__section-heading {
+	}
+	&__tag {
+	}
+	&__tags {
+		margin-bottom: 30px;
+	}
+}
+
+.blog-latest-posts {
+	&__arrow-link {
+	}
+	&__button {
+	}
+	&__col {
+	}
+	&__col-header {
+		display: flex;
+		justify-content: space-between;
+		flex: 0 0 50%;
+		margin-bottom: 25px;
+	}
+	&__footer {
+	}
+	&__header {
+	}
+	&__heading {
+	}
+	&__section-heading {
+		margin-bottom: 20px;
+	}
+	&__img {
+	}
+	&__section {
+		row-gap: 25px;
+	}
+	&__tag {
+	}
+	&__tags {
+		margin-bottom: 0;
+	}
+	&__posted-date {
+		margin-bottom: 0;
+	}
+}
+
+.blog-most-popular {
+	&__section-heading {
+		margin-bottom: 15px;
+	}
+}
 
 
 .footer {
