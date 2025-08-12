@@ -174,8 +174,11 @@
 
 					<section class="section blog-content__section blog-latest-posts__section blog-most-popular__section">
 						<div class="col blog-content__col section__col blog-latest-posts__col image-col blog-most-popular__col">
-
-							<img class="img blog-content__img image-col__img blog-latest-posts__img" src="./assets/img/tube-image-mob.webp" srcset="./assets/img/tube-image-mob.webp 576w, ./assets/img/tube-image-x2.webp x2" alt="">
+							<img class="img blog-content__img image-col__img blog-latest-posts__img"
+								src="./assets/img/tube-image.webp" 
+								srcset="./assets/img/tube-image-mob.webp 300w, ./assets/img/tube-image-x2.webp 570w"
+								sizes="(max-width: 600px) 300px, 570px" 
+							 alt="">
 						</div>
 						<div class="col blog-content__col section__col blog-latest-posts__col blog-most-popular__col content-col">
 							<header class="col-header blog-latest-posts__col-header blog-most-popular__header">
@@ -196,10 +199,14 @@
 					</section>
 					<section class="section blog-content__section blog-latest-posts__section">
 						<div class="col blog-content__col section__col blog-latest-posts__col image-col">
-							<img class="img blog-content__img image-col__img blog-latest-posts__img" src="./assets/img/wall-image.webp" alt="">
+							<img class="img blog-content__img image-col__img blog-latest-posts__img"
+								src="./assets/img/wall-image.webp" 
+								srcset="./assets/img/wall-image-300.webp 300w, ./assets/img/wall-image.webp 570w"
+								sizes="(max-width: 600px) 300px, 570px" 
+							 alt="">
 						</div>
 						<div class="col blog-content__col section__col blog-latest-posts__col content-col">
-							<header class="col-header blog-latest-posts__col-header">
+							<header class="col-header blog-latest-posts__col-header blog-most-popular__header">
 								<div class="tags blog-content__tags blog-latest-posts__tags">
 									<a href="#" class="tags__tag blog-content__tag blog-latest-posts__tag">Visual Design</a>
 								</div>
@@ -207,36 +214,27 @@
 									<time class="date blog-content__date posted-date__date" datetime="2020-06-08">8 June, 2020</time>
 								</div>								
 							</header>
-							<h3 class="heading-3 section-heading blog-content__section-heading blog-latest-posts__section-heading">
+							<h3 class="heading-3 section-heading blog-content__section-heading blog-latest-posts__section-heading blog-most-popular__section-heading">
 								Creativity vs. UX
 							</h3>
 							<p class="section-content blog-content__section-content">
 								Is it possible to create a delightful user experience without following best UX practices?
 							</p>
+							<p class="section-content blog-content__section-content">
+								UI has to make a huge visual difference between warning, an alert and a success.
+							</p>
 						</div>
 					</section>
 					<button type="button" onclick="info.showModal()" class="button blog-latest-posts__button">Load More</button>
-					<footer class="article-footer blog-content__footer blog-latest-posts__footer">
-						<div class="article-footer__huge">
-							<ul class="article-footer__list">
-								<li class="article-footer__item">
-									<a href="#" class="article-footer__link">Full-time UI/UX designer</a>
-								</li>
-								<li class="article-footer__item">
-									<a href="#" class="article-footer__link">Head of Design at VeronaLabs.com</a>
-								</li>
-							</ul>
-						</div>
-						<div class="article-footer__common">
-							<p class="article-footer__content">
-								We work with clients around the world from our headquarters in Charleston, South Carolina.
-							</p>
-							<p class="article-footer__content">
-								We focus on naming, branding, brand narratives, website design and development, and brand experiences.
-							</p>
-						</div>						
-	
-					</footer>
+				</article>
+				<article class="article main-content__article info-article">
+					<h2 class="heading-2 info-article__heading"><a href="#" class="info-article__arrow-link arrow-link">Full-time UI/UX designer <br>Head of Design at VeronaLabs.com</a></h2>
+					<p class="info-article__content">
+						We work with clients around the world from our headquarters in Charleston, South Carolina.
+					</p>
+					<p class="info-article__content">
+						We focus on naming, branding, brand narratives, website design and development, and brand experiences.
+					</p>
 				</article>
 			</div>
 		</main>
@@ -251,28 +249,28 @@
 					<ul class="social bottom-footer__social">
 						<li class="social__item">
 							<a href="#" class="social__link">
-								<svg width="20" height="20">
+								<svg class="social__img" width="20" height="20">
 									<use xlink:href="./assets/img/svg/sprite/sprite.svg#instagram" class="social__icon"></use>
 								</svg>
 							</a>
 						</li>
 						<li class="social__item">
 							<a href="#" class="social__link">
-								<svg width="20" height="20">
+								<svg class="social__img" width="20" height="20">
 									<use xlink:href="./assets/img/svg/sprite/sprite.svg#facebook" class="social__icon"></use>
 								</svg>
 							</a>
 						</li>
 						<li class="social__item">
 							<a href="#" class="social__link">
-								<svg width="20" height="20">
+								<svg class="social__img" width="20" height="20">
 									<use xlink:href="./assets/img/svg/sprite/sprite.svg#twitter" class="social__icon"></use>
 								</svg>
 							</a>
 						</li>
 						<li class="social__item">
 							<a href="#" class="social__link">
-								<svg width="20" height="20">
+								<svg class="social__img" width="20" height="20">
 									<use xlink:href="./assets/img/svg/sprite/sprite.svg#linkedin" class="social__icon"></use>
 								</svg>
 							</a>
@@ -281,7 +279,7 @@
 					</ul>
 				</div>
 				<div class="bottom-footer__col full-width-col">
-					<p>&copy; Copyright Manifest Theme. All&nbsp;rights&nbsp;reserved</p>
+					<p class="bottom-footer__copyright">&copy; Copyright Manifest Theme. All&nbsp;rights&nbsp;reserved</p>
 				</div>
 			</div>
 		</footer>
