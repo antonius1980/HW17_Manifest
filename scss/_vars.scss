@@ -15,7 +15,7 @@ $dark-color-secondary: #565656;
 $dark-color-secondary-rgb: hex-to-rgb-list($dark-color-secondary);
 $light-color-secondary: #f4f4f4;
 $light-color-secondary-rgb: hex-to-rgb-list($light-color-secondary);
-$accent-color-primary: #ff0000;
+$accent-color-primary: #9EDCDE;
 $accent-color-primary-rgb: hex-to-rgb($accent-color-primary);
 $links-color-primary: #7b7b7b;
 
@@ -24,7 +24,7 @@ $font-color-heading: $dark-color-primary;
 
 
 $container-width: 100%;
-$container-width-max: 1200px;
+$container-width-max: 1170px;
 
 // Breakpoints mobile first
 //0 - default CSS
