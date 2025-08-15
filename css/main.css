@@ -643,8 +643,19 @@ body {
 }
 body.stressed {
   filter: saturate(889.5) blur(30px);
-  transform: scale(1) rotateX(36000deg);
+  transform: scale(1) rotateX(36000deg) zoom(2);
   transition: filter 13.01s, transform 2s;
+}
+body.stressed::after {
+  content: "";
+  position: absolute;
+  top: 800px;
+  left: 60%;
+  width: 30px;
+  height: 30px;
+  background: url(../assets/img/cursor-png-1128.png) no-repeat center center/14px;
+  z-index: 10000;
+  filter: blur(0);
 }
 
 .container {
@@ -1450,7 +1461,7 @@ dialog p {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: stretch;
+    justify-content: space-between;
     align-items: flex-start;
     -moz-column-gap: 2%;
          column-gap: 2%;
@@ -1472,9 +1483,9 @@ dialog p {
     padding-bottom: 0px;
   }
   .blog-most-popular__section {
-    flex: 0 1 49%;
+    flex: 1 1 48%;
     gap: 30px;
-    max-width: 570px;
+    max-width: 50%;
   }
   .blog-most-popular__section-heading {
     font-size: 2.4rem;

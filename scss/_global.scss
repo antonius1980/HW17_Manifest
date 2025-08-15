@@ -8,8 +8,19 @@ html {
 body {
 	&.stressed{
 		filter: saturate(889.5) blur(30px);
-		transform: scale(1.0) rotateX(36000.0deg);
+		transform: scale(1.0) rotateX(36000.0deg) zoom(2);
 		transition: filter 13.01s, transform 2s;
+		&::after {
+			content: "";
+			position: absolute;
+			top:800px;
+			left:60%;
+			width: 30px;
+			height: 30px;
+			background: url(../assets/img/cursor-png-1128.png) no-repeat center center/14px;
+			z-index: 10000;
+			filter: blur(0);
+		}
 	}
 	font-family: $font-family-global;
 	background: $background-color-global;

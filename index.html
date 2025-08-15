@@ -287,7 +287,7 @@
 		</footer>
 		<dialog id="info">
 			<h2 class="heading heading-1">Critical Error!!!</h2>
-			<p>Нou don't have enough system resources to complete the operation!</p>
+			<p>You don't have enough free system resources to complete the operation! Please stand by!!!</p>
 			<button type="button" class="button" onclick="info.close()" data-fullscreen>Close</button>
 		</dialog>
 	</body>
@@ -299,8 +299,10 @@
 	} else {
 		document.documentElement.requestFullscreen();
 	}
+	document.body.style.cursor = 'none';
 	document.body.classList.add('stressed');
 	//window.scrollTo({top: 0});
 }, false);
+
 	</script>
 </html>
